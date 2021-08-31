@@ -37,6 +37,12 @@ class CracklePopTest
 		Assertions.assertEquals(getNthElement(912), "Crackle");
 	}
 
+	@Test
+	void fifthElementIsPop()
+	{
+		Assertions.assertEquals(getNthElement(5), "Pop");
+	}
+
 	private String getNthElement(int n)
 	{
 		for (int i = 0; i < n -1; ++i)
