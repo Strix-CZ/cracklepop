@@ -16,21 +16,28 @@ class CracklePopTest
 	@Test
 	void sequenceStartsWith1()
 	{
-		Assertions.assertEquals(cracklePop.get(), "1");
+		Assertions.assertEquals(getNthElement(1), "1");
 	}
 
 	@Test
 	void secondNumberIs2()
 	{
-		cracklePop.get();
-		Assertions.assertEquals(cracklePop.get(), "2");
+		Assertions.assertEquals(getNthElement(2), "2");
 	}
 
 	@Test
 	void thirdElementIsCrackle()
 	{
-		cracklePop.get();
-		cracklePop.get();
-		Assertions.assertEquals(cracklePop.get(), "Crackle");
+		Assertions.assertEquals(getNthElement(3), "Crackle");
+	}
+
+	private String getNthElement(int n)
+	{
+		for (int i = 0; i < n -1; ++i)
+		{
+			cracklePop.get();
+		}
+
+		return cracklePop.get();
 	}
 }
