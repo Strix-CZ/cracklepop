@@ -11,7 +11,9 @@ class CracklePop
 
 	String getElement(int number)
 	{
-		if (number % 3 == 0)
+		if (number % 3 == 0 && number % 5 == 0)
+			return "CracklePop";
+		else if (number % 3 == 0)
 			return "Crackle";
 		else if (number % 5 == 0)
 			return "Pop";

@@ -50,4 +50,10 @@ class CracklePopTest
 		Assertions.assertEquals(cracklePop.getElement(10), "Pop");
 		Assertions.assertEquals(cracklePop.getElement(1000), "Pop");
 	}
+
+	@Test
+	void fifteenthElementIsCracklePop()
+	{
+		Assertions.assertEquals(cracklePop.getElement(15), "CracklePop");
+	}
 }
