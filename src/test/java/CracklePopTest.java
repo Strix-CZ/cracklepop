@@ -16,4 +16,13 @@ class CracklePopTest
 		cracklePop.get();
 		Assertions.assertEquals(cracklePop.get(), "2");
 	}
+
+	@Test
+	void thirdElementIsCrackle()
+	{
+		var cracklePop = new CracklePop();
+		cracklePop.get();
+		cracklePop.get();
+		Assertions.assertEquals(cracklePop.get(), "Crackle");
+	}
 }

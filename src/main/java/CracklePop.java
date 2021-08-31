@@ -4,7 +4,7 @@ class CracklePop
 
 	public String get()
 	{
-		String element = Integer.toString(counter);
+		String element = counter == 3 ? "Crackle" : Integer.toString(counter);
 		counter++;
 		return element;
 	}
