@@ -4,16 +4,18 @@ class CracklePop
 
 	public String get()
 	{
-		final String element;
-		if (counter % 3 == 0)
-			element = "Crackle";
-		else if (counter % 5 == 0)
-			element = "Pop";
-		else
-			element = Integer.toString(counter);
-
+		final String element = getElement(counter);
 		counter++;
-
 		return element;
+	}
+
+	String getElement(int number)
+	{
+		if (number % 3 == 0)
+			return "Crackle";
+		else if (number % 5 == 0)
+			return "Pop";
+		else
+			return Integer.toString(number);
 	}
 }
