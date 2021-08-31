@@ -43,4 +43,11 @@ class CracklePopTest
 	{
 		Assertions.assertEquals(cracklePop.getElement(5), "Pop");
 	}
+
+	@Test
+	void elementsDivisibleByTenArePop()
+	{
+		Assertions.assertEquals(cracklePop.getElement(10), "Pop");
+		Assertions.assertEquals(cracklePop.getElement(1000), "Pop");
+	}
 }
