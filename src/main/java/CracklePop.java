@@ -1,7 +1,11 @@
 class CracklePop
 {
+	private int counter = 1;
+
 	public String get()
 	{
-		return "1";
+		String element = Integer.toString(counter);
+		counter++;
+		return element;
 	}
 }

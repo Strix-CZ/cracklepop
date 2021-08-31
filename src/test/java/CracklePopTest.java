@@ -8,4 +8,12 @@ class CracklePopTest
 	{
 		Assertions.assertEquals(new CracklePop().get(), "1");
 	}
+
+	@Test
+	void secondNumberIs2()
+	{
+		var cracklePop = new CracklePop();
+		cracklePop.get();
+		Assertions.assertEquals(cracklePop.get(), "2");
+	}
 }
