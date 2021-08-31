@@ -1,18 +1,27 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CracklePopTest
 {
+
+	private CracklePop cracklePop;
+
+	@BeforeEach
+	void setUp()
+	{
+		cracklePop = new CracklePop();
+	}
+
 	@Test
 	void sequenceStartsWith1()
 	{
-		Assertions.assertEquals(new CracklePop().get(), "1");
+		Assertions.assertEquals(cracklePop.get(), "1");
 	}
 
 	@Test
 	void secondNumberIs2()
 	{
-		var cracklePop = new CracklePop();
 		cracklePop.get();
 		Assertions.assertEquals(cracklePop.get(), "2");
 	}
@@ -20,7 +29,6 @@ class CracklePopTest
 	@Test
 	void thirdElementIsCrackle()
 	{
-		var cracklePop = new CracklePop();
 		cracklePop.get();
 		cracklePop.get();
 		Assertions.assertEquals(cracklePop.get(), "Crackle");
