@@ -1,6 +1,17 @@
-class CracklePop
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+class CracklePop implements Supplier<String>
 {
 	private int counter = 1;
+
+	public static void main(String[] args)
+	{
+		System.out.print(Stream.generate(new CracklePop())
+				.limit(100)
+				.collect(Collectors.joining("\n")));
+	}
 
 	public String get()
 	{
