@@ -56,4 +56,11 @@ class CracklePopTest
 	{
 		Assertions.assertEquals(cracklePop.getElement(15), "CracklePop");
 	}
+
+	@Test
+	void elementsDivisibleByThreeAndFiveAreCracklePop()
+	{
+		Assertions.assertEquals(cracklePop.getElement(30), "CracklePop");
+		Assertions.assertEquals(cracklePop.getElement(45), "CracklePop");
+	}
 }
