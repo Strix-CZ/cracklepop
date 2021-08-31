@@ -2,6 +2,9 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+// Created using TDD.
+// Tests and exact history after each TDD round is available at
+// https://github.com/Strix-CZ/cracklepop
 class CracklePopSequence implements Supplier<String>
 {
 	private int counter = 1;
