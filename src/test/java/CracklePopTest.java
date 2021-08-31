@@ -20,7 +20,7 @@ class CracklePopTest
 	}
 
 	@Test
-	void secondNumberIs2()
+	void secondElementIs2()
 	{
 		Assertions.assertEquals(getNthElement(2), "2");
 	}
