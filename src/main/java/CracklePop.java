@@ -4,8 +4,12 @@ class CracklePop
 
 	public String get()
 	{
-		String element = counter == 3 ? "Crackle" : Integer.toString(counter);
+		String element = (counter % 3) == 0
+				? "Crackle"
+				: Integer.toString(counter);
+
 		counter++;
+
 		return element;
 	}
 }

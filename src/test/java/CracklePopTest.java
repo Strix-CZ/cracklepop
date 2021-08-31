@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 class CracklePopTest
 {
-
 	private CracklePop cracklePop;
 
 	@BeforeEach
@@ -29,6 +28,13 @@ class CracklePopTest
 	void thirdElementIsCrackle()
 	{
 		Assertions.assertEquals(getNthElement(3), "Crackle");
+	}
+
+	@Test
+	void elementsDivisibleByThreeAreCrackle()
+	{
+		Assertions.assertEquals(getNthElement(6), "Crackle");
+		Assertions.assertEquals(getNthElement(912), "Crackle");
 	}
 
 	private String getNthElement(int n)
